@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/warung_1.js"></script><script src="layers/tempat_ngaji_2.js"></script><script src="layers/SPBU_3.js"></script><script src="layers/sekolah_4.js"></script><script src="layers/rumah_5.js"></script><script src="layers/rawa_6.js"></script><script src="layers/rangkang_7.js"></script><script src="layers/puskesmas_8.js"></script><script src="layers/mesjid_meunasah_9.js"></script><script src="layers/lapangan_10.js"></script><script src="layers/lahan_kosong_11.js"></script><script src="layers/parit_12.js"></script><script src="layers/lueng_13.js"></script><script src="layers/mesjidpoin_14.js"></script><script src="layers/sekolahpoin_15.js"></script><script src="layers/warungpoin_16.js"></script><script src="layers/tempatngajipoin_17.js"></script><script src="layers/rawapoin_18.js"></script><script src="layers/rumahpoin_19.js"></script><script src="layers/blangpoin_20.js"></script><script src="layers/rangkangpoin_21.js"></script><script src="layers/lapanganpoin_22.js"></script><script src="layers/kolampoint_23.js"></script><script src="layers/lahan_kosongpoin_24.js"></script><script src="layers/kantorpoin_25.js"></script><script src="layers/GORPoin_26.js"></script><script src="layers/blangpoin_27.js"></script><script src="layers/blang_28.js"></script><script src="layers/BlangPoin2_29.js"></script><script src="layers/alfamartpoin_30.js"></script><script src="layers/lorong_31.js"></script><script src="layers/jalan_32.js"></script><script src="layers/batasan_gampong_33.js"></script><script src="layers/kuburan_34.js"></script><script src="layers/kolam_35.js"></script><script src="layers/kebun_36.js"></script><script src="layers/kantor_37.js"></script><script src="layers/hutan_38.js"></script><script src="layers/GOR_39.js"></script><script src="layers/alfamart_40.js"></script>
+        <script src="styles/warung_1_style.js"></script><script src="styles/tempat_ngaji_2_style.js"></script><script src="styles/SPBU_3_style.js"></script><script src="styles/sekolah_4_style.js"></script><script src="styles/rumah_5_style.js"></script><script src="styles/rawa_6_style.js"></script><script src="styles/rangkang_7_style.js"></script><script src="styles/puskesmas_8_style.js"></script><script src="styles/mesjid_meunasah_9_style.js"></script><script src="styles/lapangan_10_style.js"></script><script src="styles/lahan_kosong_11_style.js"></script><script src="styles/parit_12_style.js"></script><script src="styles/lueng_13_style.js"></script><script src="styles/mesjidpoin_14_style.js"></script><script src="styles/sekolahpoin_15_style.js"></script><script src="styles/warungpoin_16_style.js"></script><script src="styles/tempatngajipoin_17_style.js"></script><script src="styles/rawapoin_18_style.js"></script><script src="styles/rumahpoin_19_style.js"></script><script src="styles/blangpoin_20_style.js"></script><script src="styles/rangkangpoin_21_style.js"></script><script src="styles/lapanganpoin_22_style.js"></script><script src="styles/kolampoint_23_style.js"></script><script src="styles/lahan_kosongpoin_24_style.js"></script><script src="styles/kantorpoin_25_style.js"></script><script src="styles/GORPoin_26_style.js"></script><script src="styles/blangpoin_27_style.js"></script><script src="styles/blang_28_style.js"></script><script src="styles/BlangPoin2_29_style.js"></script><script src="styles/alfamartpoin_30_style.js"></script><script src="styles/lorong_31_style.js"></script><script src="styles/jalan_32_style.js"></script><script src="styles/batasan_gampong_33_style.js"></script><script src="styles/kuburan_34_style.js"></script><script src="styles/kolam_35_style.js"></script><script src="styles/kebun_36_style.js"></script><script src="styles/kantor_37_style.js"></script><script src="styles/hutan_38_style.js"></script><script src="styles/GOR_39_style.js"></script><script src="styles/alfamart_40_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
